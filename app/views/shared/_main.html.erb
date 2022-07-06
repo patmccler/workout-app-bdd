@@ -1,0 +1,9 @@
+ <%= flash.each do |key, message| %>
+  <div class="alert alert-<%= key == "notice" ? "sucess" : "danger" %>">
+    <%= message %>
+  </div>
+<% end %>
+
+<div class="container">
+  <%= yield %>
+</div>
